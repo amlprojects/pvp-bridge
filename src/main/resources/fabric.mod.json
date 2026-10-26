@@ -4,11 +4,11 @@
   "version": "${version}",
   "name": "pvp-bridge",
   "description": "",
-  "authors": [],
+  "authors": ["py660"],
   "contact": {},
   "license": "All-Rights-Reserved",
   "icon": "assets/pvp-bridge/icon.png",
-  "environment": "server",
+  "environment": "GPL-3.0-or-later",
   "entrypoints": {
     "fabric-datagen": [
       "aml.pvpBridge.client.PvpBridgeDataGenerator"
