@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "pvp-bridge",
+  "version": "${version}",
+  "name": "pvp-bridge",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/pvp-bridge/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "fabric-datagen": [
+      "aml.pvpBridge.client.PvpBridgeDataGenerator"
+    ],
+    "main": [
+      "aml.pvpBridge.PvpBridge"
+    ]
+  },
+  "mixins": [
+    "pvp-bridge.mixins.json",
+    {
+      "config": "pvp-bridge.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
