@@ -6,9 +6,9 @@
   "description": "",
   "authors": ["py660"],
   "contact": {},
-  "license": "All-Rights-Reserved",
+  "license": "GPL-3.0-or-later",
   "icon": "assets/pvp-bridge/icon.png",
-  "environment": "GPL-3.0-or-later",
+  "environment": "server",
   "entrypoints": {
     "fabric-datagen": [
       "aml.pvpBridge.client.PvpBridgeDataGenerator"
